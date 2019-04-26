@@ -1,0 +1,152 @@
+ .buy {
+     text-align: left;
+     background-color: #fff;
+     padding: 0 .3rem;
+     /* margin-top: .12rem; */
+     margin-bottom: .12rem;
+     position: relative;
+     top: 1rem;
+ }
+
+ .buy-content {
+     margin-bottom: .1rem;
+     padding: .1rem .1rem;
+ }
+
+ .buy-content>span {
+     width: 30%;
+     /* text-align: center; */
+     display: inline-block;
+ }
+
+ .buy-content>div.from-input {
+     display: inline-block;
+     width: 60%;
+ }
+
+ .buy-content>div img {
+     width: 0.92rem;
+     height: 0.92rem;
+     vertical-align: middle;
+ } 
+
+ .buy-content>div p {
+    font-size:0.26rem;
+    font-family:SimHei;
+    color:rgba(51,51,51,1);
+ }
+
+ .buy-content.border{
+     border-bottom: 1px solid rgba(244,244,244,1);
+     padding-top: .3rem;
+ }
+ .buy-content.border .float{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* margin-bottom: .2rem; */
+    /* border-bottom: 1px solid #ccc; */
+    padding: .2rem 0;
+ }
+ .buy-content.border .float img{
+    width: .3rem;
+    height: .3rem;
+    vertical-align: bottom;
+ }
+ .buy-content.border .float:last-child{
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      padding: .3rem 0;
+ }
+ .buy-content.border .e_d span{
+    padding: .076rem;
+    margin-left: .3rem;
+    background-color: #eaeaea;
+    color: #f50;
+}
+ .buy.border{
+     padding-bottom: .4rem;
+     position: initial;
+ }
+ .confirm {
+      margin-top: .6rem;
+      text-align: center;
+}
+.confirm > div > p:first-child {
+    text-align: left;
+    text-indent: .4rem;
+}
+.confirm >div >div p{
+    text-align: left !important;
+    width: 73%;
+    margin: 0 auto;
+  
+}
+.confirm >div >div p:first-child{
+
+}
+.confirm button{
+    width: 80%;
+    border: none;
+    background-color: #571d33;
+    color: #fff;
+    padding: .2rem;
+    border-radius: .8rem;
+}
+ /* .title{
+    background-color: #571d33;
+    color: #fff;
+} */
+.user_info  .buy-content>div,.user_info  .buy-content>div input{
+   text-align: right
+}
+/* .user_info  .buy-content>div input{
+
+} */
+.buy .doc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #efefef;
+    padding: .3rem;
+    padding-top: 1rem;
+    z-index: 1;
+    height: 80%;
+    overflow: scroll;
+  
+}
+.doc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #efefef;
+    padding: .3rem;
+    padding-top: 1rem;
+    z-index: 1;
+    height: 80%;
+    overflow: scroll;
+    font-size: .3rem !important; 
+  
+}
+.buy .doc *,.doc *{
+    font-size: .3rem !important; 
+}
+.buy .doc p,.doc p{
+   /* text-indent: .3rem; */
+   color:#333333;
+   margin-bottom: .2rem;
+   text-align: left;
+}
+.buy .doc .confirm, .doc .confirm{
+    display: flex;
+    position: relative;
+    top: 45%;
+}
+.buy .doc .confirm:first  button{
+    background-color: #fff ;
+}

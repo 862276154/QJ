@@ -1,0 +1,272 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background-image: none;
+}
+
+/* html{color:#000;overflow-y:scroll;overflow:-moz-scrollbars-vertical} */
+
+body, button, input, select, textarea {
+  font-family: arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+
+em {
+  font-style: normal
+}
+
+/* small{font-size:12px} */
+
+ul, ol {
+  list-style: none
+}
+
+a, a:hover, a:active {
+  text-decoration: none !important;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+legend {
+  color: #000
+}
+
+fieldset, img {
+  border: 0
+}
+
+button, input, select, textarea {
+  font-size: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+img {
+  -ms-interpolation-mode: bicubic
+}
+
+textarea {
+  resize: vertical
+}
+
+.left {
+  float: left
+}
+
+.right {
+  float: right
+}
+
+.overflow {
+  overflow: hidden
+}
+
+.hide {
+  display: none
+}
+
+.block {
+  display: block
+}
+
+.inline {
+  display: inline
+}
+
+/* .error{color:#F00;font-size:12px} */
+
+label, button {
+  cursor: pointer
+}
+
+.clearfix:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both
+}
+
+.clearfix {
+  zoom: 1
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden
+}
+
+.wordwrap {
+  word-break: break-all;
+  word-wrap: break-word
+}
+
+pre.wordwrap {
+  white-space: pre-wrap
+}
+
+body {
+  text-align: center
+}
+
+body, form {
+  position: relative
+}
+
+td {
+  text-align: left
+}
+
+img {
+  border: 0
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: .28rem;
+}
+
+#root {
+   height: 100%;
+   min-height: auto;
+  /* overflow: hidden; */
+  /* position: relative; */
+    /* top: .5rem; */
+}
+
+/* 解决点解延迟 */
+
+/* * { touch-action: none; } */
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ccc;
+}
+
+input {
+  border: none;
+  outline: transparent;
+}
+
+.am-toast-notice-content .am-toast-text {
+  font-size: .3rem !important;
+}
+
+/*   modale  开始*/
+
+.mask {
+  position: fixed;
+  background-color: rgba(66, 62, 62, 0.89);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* z-index: 9999999; */
+}
+
+.modale {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
+
+.modale .contenter {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  text-align: center;
+}
+
+.modale .contenter div {
+  padding-bottom: .2rem;
+}
+
+.modale .contenter div:nth-child(2) {
+  padding: 0;
+}
+
+.modale .contenter input {
+  height: 0.6rem;
+  border-radius: 17px;
+  border: 1px solid #ccc;
+  /* text-indent: 25%; */
+  /* text-align: center; */
+  width: 80%;
+  box-sizing: border-box;
+  padding-left: 1.7rem;
+  padding-right: .2rem;
+}
+
+.modale {}
+
+.modale .modale-contente {
+  position: relative;
+}
+
+.modale .modale-contente div {}
+
+.modale .modale-contente div span {
+  position: absolute;
+  top: .13rem;
+  color: #ccc;
+  left: .7rem;
+}
+
+.modale .modale-foot {
+  padding: .2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modale .modale-foot button {
+  background-color: rgb(68, 4, 29);
+  border: none;
+  outline: transparent;
+  color: #fff;
+  padding: .06rem 0.3rem;
+  border-radius: 15px;
+  /* font-size: .22rem; */
+}
+.modale .modale-foot button:active{
+  background-color: brown;
+  color:#b3a117;
+}
+.modale .modale-title {
+  padding: .2rem;
+}
+
+/* modale 结束 */

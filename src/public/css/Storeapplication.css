@@ -1,0 +1,7 @@
+.am-flexbox .am-flexbox-item:first-child{
+    display: block;
+}
+.am-image-picker-list .am-flexbox .am-flexbox-item:after{
+    /* display: none; */
+
+}

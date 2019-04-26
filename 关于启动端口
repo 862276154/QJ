@@ -1,0 +1,2 @@
+详见配置文件
+"start": "cross-env PORT=9999 node scripts/start.js",

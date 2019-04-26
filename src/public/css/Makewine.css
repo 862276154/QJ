@@ -1,0 +1,161 @@
+.Makewine {
+    height: 100vh;
+    padding-bottom: 1.2rem;
+    background-color: #f4f4f4;
+    /* box-sizing: border-box; */
+}
+.Makewine > *{
+    /* touch-action: none;  */
+}
+
+.Makewine h2 {
+    text-align: left;
+    font-size: 0.22rem;
+    margin-bottom: .2rem;
+}
+
+.Makewine .Makewine-bg {
+    height: 9.4rem;
+    background-image: url("../img/jiufB.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: initial;
+    z-index: 1;
+}
+
+.Makewine .Makewine-bg li {
+    list-style: none;
+    display: inline-block;
+    list-style: none;
+    display: inline-block;
+    width: 0.85rem;
+    height: 0.85rem;
+    /* background-image: url("../img/yulou.png"); */
+  
+    text-align: center;
+    line-height: .85rem;
+    border-radius: 50%;
+    position: absolute;
+    /* touch-action: none;  */
+}
+
+.Makewine .Makewine-bg li {
+    /* touch-action: none;  */
+    animation: heart 1.3s ease-in-out 2.7s infinite alternate;
+
+}
+
+@keyframes heart {
+    from {
+        transform: translate(0.1rem, 0);
+        background-color: #d5dace;
+        
+    }
+    to {
+        transform: translate(0, .3rem);
+      
+    }
+}
+.Makewine .Makewine-bg li:nth-of-type(odd) {
+    animation: heart1 1.3s ease-in-out 3.7s infinite alternate;
+}
+
+@keyframes heart1 {
+    from {
+        transform: translate(0rem, 0)
+    }
+    to {
+        transform: translate(0, .2rem)
+    }
+}
+.Makewine .Makewine-bg li:nth-of-type(even) {
+    animation: heart2 1.3s ease-in-out 4.7s infinite alternate;
+}
+
+@keyframes heart2 {
+    from {
+        transform: translate(0rem, 0);
+        /* background-color: #d5dace; */
+    }
+    to {
+        transform: translate(0rem, .2rem);
+        /* background-color: rosybrown; */
+    }
+}
+.Makewine .Makewine-bg li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.Makewine .Makewine-bg li p{
+    text-align: center;
+    color: #fff;
+}
+
+/* .Makewine .Makewine-bg li:active,.Makewine .Makewine-bg li:hover {
+    background-color: #164c0d;
+    opacity: 0.3;
+} */
+
+.Makewine .Explain {
+    padding: 0 .3rem;
+    margin-bottom: 2rem;
+}
+
+.Makewine p {
+    text-align: left;
+    font-size: 0.2rem;
+    letter-spacing: .04rem;
+    line-height: .3rem;
+    color: #A1A1A1;
+    
+}
+.Makewine .Explain p{
+    text-indent: .3rem;
+}
+.Makewine .Collect-btn{
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .3rem;
+}
+.Makewine .Collect-btn button{
+    width:1.8rem;
+    height:0.5rem;
+    background:linear-gradient(90deg,rgba(67,3,28,1),rgba(137,42,79,1));
+    border-radius: .2rem;
+    font-size: 0.24rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    margin-top: .2rem;
+    outline: transparent;
+    border: none;
+    text-align: center;
+}
+.Makewine .Collect-btn button:hover{
+    background: linear-gradient(90deg,rgb(152, 97, 119),rgb(222, 104, 150));
+    color: #c5c473;
+    font-size: .26rem;
+}
+.Makewine .House{
+    position: fixed;
+    right: .3rem;
+    top: .3rem;
+    width: .5rem;
+    z-index: 999;
+}
+.Makewine div.House{
+    width: auto;
+    top: .6rem;
+    left: .3rem;
+    right: inherit;
+
+}
+.Makewine div.House p{
+    color:#fff;
+  
+}
+
+

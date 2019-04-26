@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			background: #4c4c4c;
+		}
+		.logo_wrap{
+			width: 60%;
+			margin: auto;
+			text-align: center;
+			padding-top: 3rem;
+		}
+		.logo_img{
+			width: 2.8rem;
+			height: 2.8rem;
+		margin-bottom: 0.3rem ;
+			
+			/*text-align: center;*/
+		}
+		.logo_title{
+			font-size: 0.5rem;
+		margin-bottom: 0.5rem ;
+		color: #fff;
+		}
+		.logo_xian{
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+		    margin-bottom: 0.5rem ;
+		}
+		.logo_con{
+			color: #fff;
+			font-size: 0.36rem;
+		}
+		.logo_btn{
+			display: inline-block;
+			width: 98%;
+			margin: auto;
+			height: 1rem;
+			line-height: 1rem;
+			background: #333;
+			color: #fff;
+			font-size: 0.4rem;
+			border-radius: 0.5rem;
+			margin-top: 0.5rem;
+			text-decoration: none;
+			
+		}
+		.logo_tishi{
+			color: #FFFFFF;
+			font-size: 0.4rem;
+		}
+		.logo_tishik{
+			position: absolute;
+			right: 0.4rem;
+			top: 0.8rem;
+			width: 4rem;
+			height: 1.5rem;
+			background: #333;
+			border-radius: 0.2rem;
+			padding: 0.2rem;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.logo_tishikp{
+			color: #FFFFFF;
+			font-size: 0.36rem !important;
+		}
+		.logo_tishi,.logo_tishik,.logo_btn{
+			display: none;
+		}
+		   .andriod_logo,.ios_logo{
+		   	width: 0.65rem;
+		    vertical-align: bottom;
+		    margin-right: 0.2rem;
+		    display: none;
+		    }
+	</style>
+	<body>
+		<div class="logo_wrap">
+			<img src="logo.png" alt="logo" class="logo_img"/>
+		    <p class="logo_title">
+		    	<img src="andriod_logo.png" class="andriod_logo"/>
+		    	<img src="ios_logo.png" class="ios_logo"/>QJ前景</p>
+		    <p class="logo_xian xz"></p>
+		    <p class="logo_con xz">1.4(Build 4)-2.43MB</p>
+		    <p class="logo_con xz">更新于：2019-1-9 13:000</p>
+		    <a href="http://www.qj1588.cn/qj.apk" class="logo_btn xz" id="andriod">下载安装</a>
+		    <a href="http://www.qj1588.cn/qj.apk" class="logo_btn xz" id="ios">下载安装</a>
+		    <p class="logo_tishi">微信/QQ内无法下载应用</p>
+		</div>
+		<div class="logo_tishik">
+			 <p class="logo_tishikp">请点击右上角</p>
+			 <p class="logo_tishikp">选择"浏览器中打开"</p>
+		</div>
+	</body>
+	<script src="jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	//适配兼容
+    function setRemFontSize() {
+        var remSize = window.innerWidth / 7.5;
+        document.querySelector("html").style.fontSize = (remSize > 100 ? 100 : remSize) + "px";
+    }
+    setRemFontSize();
+    window.addEventListener("resize", function () {
+        setTimeout(function () {
+            setRemFontSize();
+        }, 200)
+    });
+    
+    //手机兼容    
+	$(function () {
+    var u = navigator.userAgent, app = navigator.appVersion;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    //安卓
+    if (isAndroid) {
+//      alert("安卓机！")
+        $('#andriod').css('display','block');
+        $(".andriod_logo").css('display','inline-block');
+        //判断是否微信登陆
+		function isWeiXin() {
+		    var ua = window.navigator.userAgent.toLowerCase();
+		    console.log(ua);
+		    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		if(isWeiXin()){
+            //console.log(" 是来自微信内置浏览器")
+            $(".xz").hide();
+            $(".logo_tishi").css('display','block');
+            $(".logo_tishik").css('display','block');
+	    }else{
+			//console.log("不是来自微信内置浏览器")
+            $(".logo_tishi").hide();
+            $(".logo_tishik").hide();
+			$(".logo_xian").css('display','block');
+			$(".logo_con").css('display','block');
+			$("#andriod").css('display','block');
+		}
+    }
+    //苹果
+    if (isIOS) {
+//      alert("苹果果机！")
+        $('#ios').css('display','block');
+         $(".ios_logo").css('display','inline-block');
+        //判断是否微信登陆
+		function isWeiXin() {
+		    var ua = window.navigator.userAgent.toLowerCase();
+		    console.log(ua);
+		    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		if(isWeiXin()){
+            //console.log(" 是来自微信内置浏览器")
+            $(".xz").hide();
+            $(".logo_tishi").css('display','block');
+            $(".logo_tishik").css('display','block');  
+	    }else{
+			//console.log("不是来自微信内置浏览器")
+            $(".logo_tishi").hide();
+            $(".logo_tishik").hide();
+			$(".logo_xian").css('display','block');
+			$(".logo_con").css('display','block');
+			$("#ios").css('display','block');
+			
+		} 
+    }
+});  
+	    </script>
+</html> 

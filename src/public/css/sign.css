@@ -1,0 +1,154 @@
+.sign-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #44041d;
+    border-radius: 0;
+    padding-top: .4rem;
+    position: relative;
+  
+    background-repeat: no-repeat;
+    background-position: center 88%;
+    background-size: 91% 67%;
+    top: 0;
+}
+
+.sign-title {
+    font-size: 0.32rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: .03rem;
+    line-height: 2;
+    margin-top: .3rem;
+}
+.sign-title p{
+    width: 94%;
+    margin: 0 auto;
+    margin-bottom: .2rem;
+    font-size: .4rem;
+    font-family: serif;
+}
+.sign-title p sup{
+    font-size: .55rem;
+    top: -.04rem;
+}
+
+.sign-content button {
+    width: 1.8rem;
+    height: 0.61rem;
+    background-image: url("../img/qian_btn.png");
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: .25rem;
+    background-size: 100%;
+  
+}
+
+.sign-content button:active {
+    background-image: url("../img/on_qian.png");
+    width: 1.8rem;
+    height: 0.61rem;
+    outline: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sign-content button.ok_day{
+    background-image: url("../img/on_qian.png")
+}
+
+.sign-content .sign-title button {
+    /* margin-bottom: 1.2rem; */
+    /* margin-top: .3rem; */
+}
+
+/* .sign-content button.on {
+    background-image: url("../img/on_qian.png")
+} */
+
+.sign .user-content {
+  
+    padding-top: .7rem;
+    background-size: 91%;
+    padding-bottom: .3rem;
+    background-image: url("../img/qiandao_bj.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 94%;
+    margin-top: .3rem;
+}
+
+.sign .user-content>div:nth-child(1) {
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    line-height: .7rem;
+    padding-bottom: .6rem;
+}
+
+.sign .user-content p.title {
+    letter-spacing: .07rem;
+    font-size: 0.4rem;
+    font-family: PingFang-SC-Regular;
+    color: #000;
+    /* margin-bottom: .2rem */
+}
+.sign .user-content ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+}
+.sign .user-content ul.week{
+  color: #717171;
+}
+.sign .user-content ul.day{
+    color: #111212;
+    
+}
+.sign .user-content ul.day li{
+    color: #000;
+    font-size: .38rem;
+}
+
+.sign .user-content ul li {
+    display: inline-block;
+    /* background-color: red; */
+    /* flex-grow: 1; */
+    width: 14.2857%;
+    flex-shrink: 0;
+}
+.sign .user-content ul li:hover{
+    color: red;
+}
+.sign .user-content img {
+    position: absolute;
+    width: 100%;
+    bottom: -.3rem;
+    display: block;
+    right: 0;
+}
+.sign .user-content .days{
+    background-image: url("../img/days.png");
+    background-size: 78%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sign .sign-footer{
+    text-align: left ;
+    padding: .3rem;
+}
+.sign .sign-footer p{
+    color: #5A5A5A;
+    padding-top: .3rem;
+}
+.sign .sign-footer > p{
+    color: red;
+}
+.sign .sign-footer div p{
+    text-indent: .3rem;
+    font-size: .23rem;
+}
